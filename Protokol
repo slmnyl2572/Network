@@ -1,1 +1,13 @@
-IP :: İnternet Protocoll
+IP :: İnternet Protocol
+    192.168.1.100, 10.10.10.10 bunlar hepsi birer IP'dir.
+
+MAC :: Media Access Control
+    FF:DR:SD:DF:GG veya AS:DF:SD:FF:EE gibi örnekler gösterilebilir.
+
+DHCP :: Dinamic Host Configuration Protocol
+    DHCP ilk olarak İstemci tarafından serverdan İP yapılandırma bilgisi talep eder. Bir networkte aynı İP adresine ait bilgisayar olamaz. DHCP IP adreslerinin benzersiz olmasını sağlamaktadır. 
+
+DNS :: Domain Name System
+    
+
+
