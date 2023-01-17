@@ -1,3 +1,4 @@
+ISP :: Internet Service Provider - İnternet Servis Sağlayıcısı
 IP :: İnternet Protocol
     192.168.1.100, 10.10.10.10 bunlar hepsi birer IP'dir.
 
@@ -5,9 +6,52 @@ MAC :: Media Access Control
     FF:DR:SD:DF:GG veya AS:DF:SD:FF:EE gibi örnekler gösterilebilir.
 
 DHCP :: Dinamic Host Configuration Protocol
-    DHCP ilk olarak İstemci tarafından serverdan İP yapılandırma bilgisi talep eder. Bir networkte aynı İP adresine ait bilgisayar olamaz. DHCP IP adreslerinin benzersiz olmasını sağlamaktadır. 
+    DHCP ilk olarak İstemci tarafından serverdan İP yapılandırma bilgisi talep eder. 
+    Bir networkte aynı İP adresine ait bilgisayar olamaz. DHCP IP adreslerinin benzersiz olmasını sağlamaktadır. 
 
 DNS :: Domain Name System
+    Host isimlerini IP'ye çevirmek için kullanılan sistemdir. Sunucu isimleri benzersiz olmalıdır. GoDady veya isimtescil gibi sitelerde sunucumuzu kaydedebiliriz.
+    Web sitemize www.a.com isteği yaptığımızda öncelilkle çözümlenmesi için DNS Servera gider orada çözümlenir, IP adresini alır öyle adrese gider.
+    DNS server içinde alan adları vardır ve onlara karşılık gelen IP adrsleri vardır.
+        www.aa.com 12.34.134.4
+        www.aap.com 12.34.123.3
+   "Nslookup" komutu ping göndereceğimiz alan adının, bize IP adresini getirir
+        nslookup www.google.com, gibi deneme yapıp bize bu alan adının IP adresini getirir.
+    DNS Türkiye Sunucuları şu mail adresinden öğrenebiliriz. Burada aktif DNS adrsleri mevcuttur.
+        https://public-dns.info/nameserver/tr.html
+
+HTTP/s :: Hyper Text Transfer Protocol /Security
+    Client - Request, istemci istek yapar.
+    Server - Response, Sunucu cevap verir.
+    Bir siteye erişmek için 3 aşama mevcuttur. 
+        1 - istemci bilgisayarın, sunucuya istekte bulunması,
+        2 - Sunucunun isteği alması ve sunucunun cevap vermesi,
+        3 - Sunucu tarafından gönderilen HTML kodlarını istemci bilgisayarında çözümlenmesi.
+    HTTP >> Güvenli olmayan bağlantı,
+    HTTPS >> Güvenli olan bağlantı, özel bir protokoldür. SSH'a benzemektedir.
+FTP :: File Transfer Protocol //Dosya Aktarım Protokolü
+    "open" >> FTP'ye bağlanmak için,
+    "put" >> Dosya yüklemek için,
+    "get" >> Dosya indirmek için,
+    "dir" >> Dosyaları ayrıntılı listelemek için
+    Daha bunun gibi bir sürü komut bulunmaktadır. Aynı zamanda FileZilla uygulaması üzerinden de FTP'i kullanabiliriz.
+TFTP :: Trivial File Transfer Protocol
+    FTP gibi dosyaları yüklemek veya indirmek için kullanıcı girişi yapmaya gerek duymaz, FTP'ye göre güvenli değildir.
+
+Telnet :: Bir cihazı uzaktan konfügre etmek için kullanılan protokoldür.
+    Telnet uzaktan kullanıcı girişi yaptıktan sonra telneti kullanabiliriz.
+
+SSH :: Secure Shell
+    Telnet ve SSH farkı nedir :: Telnet Trafiği düz metin olarak gönderir. SSH ise trafiği şifreler.
+    SSH ve Telnetden daha güvenlidir. 
+    https://nethackwiki.com/wiki/Public_server Bu siteden SSH ve Telnet FREE hostları bulunmaktadır.
+NAT :: Network Adress Translation >> Ağ aracı çeviricisi
+    Kurum içi veya ev içi haberleşmeler de "Private" IP kullanılır.
+    Modemin içinde NAT kofigrasyonu default olarak bulunmaktadır. NAT "Private" IP adresini "Public" IP
+    adresine çevirir. "Public" IP dışarıya ait IP dir. 
+    Public IP adresimizi öğrenmek için şu siteyi kullanabiliriz.
+        https://www.dnsleaktest.com/
+    CMD üzerinden nslookup komutu sayesinde de Public IP adresini öğrenebiliriz.
+        nslookup myip.opendns.com resolver1.opendns.com
+    Public IP adresi modem ayarları arayüzünden değiştirilebilir.
     
-
-

@@ -1,0 +1,19 @@
+1- Cihazlar
+    IP telefon
+    Laptop
+    Yazıcı
+    Router
+    Switch
+2- Medya
+    UTP RJ45 kablo
+    Koaksiyel kablo - video trafiği için kullanılır.Bakır iletken kullanılır.
+    Fiber Optik Kablo -  Bir noktadan diğer noktaya veri aktarımı için kullanılır. Uzun mesafe için.
+        cam veya plastik fiber optıik kablo kullanılır. 
+    V35 kablosu
+    Konsol kablosu
+3- Servisler
+    E-posta servisi
+    http servisi
+    ftp-telnet servisi 
+    dhcp,dns vb.
+

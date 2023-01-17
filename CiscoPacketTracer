@@ -1,0 +1,7 @@
+Cisco tarafından geliştirilmiş ağ simülasyonu uygulamasıdır. Netecad ve Cisco şirketlerinin geliştirdiği 
+bir uygulamadır. Yazılımcı ve sibir güvenlik uzmanları tarafından geliştirilmiştir.,
+
+WinPcap programı ağ kartından ve ağ medyasına veya ağ medyasından ağ kartına iletişimi .pcap uzantısı ile 
+kaydeden programdır. Tek başına bir şey ifade etmez. Wireshark ile beraber kullanılır.
+
+Wireshark .pcap dosyalarını daha anlaşılır bir şekilde analiz etmek için kullanılmaktadır.
