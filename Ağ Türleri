@@ -1,0 +1,14 @@
+LAN :: Local Area Network -- Yerel Alan Ağı
+    Kendi iç networkümüzdür. Tamamını biz yönetiriz.
+
+WAN :: Wide Area Network -- Geniş Alan Ağı
+    Farklı local networleri birbirine bağlayan networktur. Servis sağlayıcısı hizmeti alıp birbirine 
+    bağladığımız LAN'ları bağladığımız networklere WAN denir.
+
+WLAN :: Wireless LAN
+
+MAN :: Metropolian Area Network
+
+SAN :: Depolama Alan Ağı
+    Veri depolama, yedekleme, 
+LAN < MAN < WAN < WLAN

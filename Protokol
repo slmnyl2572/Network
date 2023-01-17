@@ -1,16 +1,36 @@
+Protokol nedir?
+    Düzen demektir.
 ISP :: Internet Service Provider - İnternet Servis Sağlayıcısı
+
 IP :: İnternet Protocol
-    192.168.1.100, 10.10.10.10 bunlar hepsi birer IP'dir.
+    192.168.1.100, 10.10.10.10 bunlar hepsi birer IPdir.
+    32 bitlik bir adrestir.
 
 MAC :: Media Access Control
     FF:DR:SD:DF:GG veya AS:DF:SD:FF:EE gibi örnekler gösterilebilir.
+    Windows tercih ettiği Mac Adres tipi
+        00-0A-F3-48-A0-97
+    Linux tercih ettiği Mac Adrsi tipi
+        00:0A:F3:48:A0:97
+    Cisco Paket Tracer
+        000A.F348.A097
+    MAC adresi 48 bitlik bir adrestir. 
+    Hexadecimal sayısal sisteminden oluşur.
+    Mac adresleri benzersiz yapmak kullanıcıya ait bit görev değildir.
+    Bu Web sitesinden https://macvendors.com/ Verilen mac adresi hangi marka olduğunu bize vermektedir.
+    OUI :: Organizationally Unique İdentifier - Benzersiz Kuruluş Tanımlayıcısı
+        00-0A-F3-48-A0-97
+        00-0A-F3 > OUI tarafından atanan
+        48-A0-97 > Ağ kartı üreticisi tarfaından atanan
+    NOT: İEEE MAC adreslerinin benzersiz olmasını sağlar.
+    cmd üzerinden "ipconfig /all" komutu ile öğrenilir.
 
 DHCP :: Dinamic Host Configuration Protocol
     DHCP ilk olarak İstemci tarafından serverdan İP yapılandırma bilgisi talep eder. 
     Bir networkte aynı İP adresine ait bilgisayar olamaz. DHCP IP adreslerinin benzersiz olmasını sağlamaktadır. 
 
 DNS :: Domain Name System
-    Host isimlerini IP'ye çevirmek için kullanılan sistemdir. Sunucu isimleri benzersiz olmalıdır. GoDady veya isimtescil gibi sitelerde sunucumuzu kaydedebiliriz.
+    Host isimlerini IPye çevirmek için kullanılan sistemdir. Sunucu isimleri benzersiz olmalıdır. GoDady veya isimtescil gibi sitelerde sunucumuzu kaydedebiliriz.
     Web sitemize www.a.com isteği yaptığımızda öncelilkle çözümlenmesi için DNS Servera gider orada çözümlenir, IP adresini alır öyle adrese gider.
     DNS server içinde alan adları vardır ve onlara karşılık gelen IP adrsleri vardır.
         www.aa.com 12.34.134.4
@@ -54,4 +74,9 @@ NAT :: Network Adress Translation >> Ağ aracı çeviricisi
     CMD üzerinden nslookup komutu sayesinde de Public IP adresini öğrenebiliriz.
         nslookup myip.opendns.com resolver1.opendns.com
     Public IP adresi modem ayarları arayüzünden değiştirilebilir.
-    
+
+İCMP :: Internet Control Message Protocol 
+    Ping komutu bu protokulu kullanır.
+PİNG ::
+    127.0.0.1 e ping atmak demek, ağ kartının ve ağ konfügrasyonlarının çalışıp çalışmadığını kontrol eder.
+
