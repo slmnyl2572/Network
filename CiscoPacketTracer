@@ -4,4 +4,26 @@ bir uygulamadır. Yazılımcı ve sibir güvenlik uzmanları tarafından gelişt
 WinPcap programı ağ kartından ve ağ medyasına veya ağ medyasından ağ kartına iletişimi .pcap uzantısı ile 
 kaydeden programdır. Tek başına bir şey ifade etmez. Wireshark ile beraber kullanılır.
 
-Wireshark .pcap dosyalarını daha anlaşılır bir şekilde analiz etmek için kullanılmaktadır.
+Wireshark .pcap dosyalarını daha anlaşılır bir şekilde analiz etmek için kullanılmaktadır. 
+
+Bu üçü olduğu zaman bir network oluşur.
+    source - mesajı gönderecek bilgisayar
+    destination - hedef bilgisayar
+    media - kablo düzeni örneğin UTP
+ Ağ kartından çıkan media kablolar üzerinde haberleşecek. 
+
+ÇAPRAZ KABLO
+    PC-PC
+    HUB-HUB
+    SWİTCH-SWİTCH --Çapraz kablo bağlandığı zaman 50 saniye kadar beklememiz lazım
+    ROUTER-ROUTER
+    PC-ROUTER
+    HUB-SWİTCH
+DÜZ KABLO
+    PC-HUB
+    PC-SWİTCH
+    ROUTER-SWİTCH
+    ROUTER-HUB
+NOT ::  ROUTER          SWİTCH
+        Çapraz   DÜZ    Çapraz
+         PC             HUB
