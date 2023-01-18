@@ -27,17 +27,17 @@ MAC :: Media Access Control
 
 DHCP :: Dinamic Host Configuration Protocol
     DHCP ilk olarak İstemci tarafından serverdan İP yapılandırma bilgisi talep eder. 
-    Bir networkte aynı İP adresine ait bilgisayar olamaz. DHCP IP adreslerinin benzersiz olmasını sağlamaktadır. 
+    Bir networkte aynı İP adresine ait bilgisayar olamaz. DHCP, IP adreslerinin benzersiz olmasını sağlamaktadır. 
 
 DNS :: Domain Name System
     Host isimlerini IPye çevirmek için kullanılan sistemdir. Sunucu isimleri benzersiz olmalıdır. GoDady veya isimtescil gibi sitelerde sunucumuzu kaydedebiliriz.
     Web sitemize www.a.com isteği yaptığımızda öncelilkle çözümlenmesi için DNS Servera gider orada çözümlenir, IP adresini alır öyle adrese gider.
-    DNS server içinde alan adları vardır ve onlara karşılık gelen IP adrsleri vardır.
+    DNS server içinde alan adları vardır ve onlara karşılık gelen IP adresleri vardır.
         www.aa.com 12.34.134.4
         www.aap.com 12.34.123.3
    "Nslookup" komutu ping göndereceğimiz alan adının, bize IP adresini getirir
         nslookup www.google.com, gibi deneme yapıp bize bu alan adının IP adresini getirir.
-    DNS Türkiye Sunucuları şu mail adresinden öğrenebiliriz. Burada aktif DNS adrsleri mevcuttur.
+    DNS Türkiye Sunucuları şu internet adresinden öğrenebiliriz. Burada aktif DNS adrsleri mevcuttur.
         https://public-dns.info/nameserver/tr.html
 
 HTTP/s :: Hyper Text Transfer Protocol /Security
@@ -56,7 +56,8 @@ FTP :: File Transfer Protocol //Dosya Aktarım Protokolü
     "dir" >> Dosyaları ayrıntılı listelemek için
     Daha bunun gibi bir sürü komut bulunmaktadır. Aynı zamanda FileZilla uygulaması üzerinden de FTP'i kullanabiliriz.
 TFTP :: Trivial File Transfer Protocol
-    FTP gibi dosyaları yüklemek veya indirmek için kullanıcı girişi yapmaya gerek duymaz, FTP'ye göre güvenli değildir.
+    FTP gibi dosyaları yüklemek veya indirmek için kullanıcı girişi yapmaya gerek duymaz, 
+    FTP'ye göre güvenli değildir.
 
 Telnet :: Bir cihazı uzaktan konfügre etmek için kullanılan protokoldür.
     Telnet uzaktan kullanıcı girişi yaptıktan sonra telneti kullanabiliriz.
@@ -77,6 +78,25 @@ NAT :: Network Adress Translation >> Ağ aracı çeviricisi
 
 İCMP :: Internet Control Message Protocol 
     Ping komutu bu protokulu kullanır.
+
+        >>  echo Request(ping isteği)>>
+    source                              destination
+        <<    echo reply(ping cevabı)   <<
+                RTT
+               - Round, Trip, Time >>Ping atma sürecinin ilk bilgisayardan çıkıp, diğer bilgisayardan gelene 
+                kadar grçrn süredir.Localde 1ms altında, public IP de yaklaşık 50ms dir.
+               - Ping ile hata mesajı aldığımız zaman "request time out", bunun için arızanın nerde olduğunu 
+                tespit etmek için
+                    "traceroute"  linux-ROUTER
+                    "tracert" Windows
+                komutunu kullanırız. Bize ilk bilgisayardan son bilgisayara giden yolları tespit eder.
+
+
 PİNG ::
     127.0.0.1 e ping atmak demek, ağ kartının ve ağ konfügrasyonlarının çalışıp çalışmadığını kontrol eder.
 
+APİPA :: Automatic Pirivate IP Addressing
+    Aynı lokal ağda sadece kullanabiliriz. Local dışına çıktığımız zaman Apipa çalışmacaktır. 
+    ve iletişim olmayacaktır. Sadece 2 adet PC Çapraz kablo ile bağlı olduğu zaman stati k IP adresi ile iletişim
+    kurabiliyorduk. DHCP yaptığımız zaman APİPA kullanrak tekrar iletişim sağlar 2 PC arasında 169.254.x.x
+    şeklinde IP adresleri tanımlar.
