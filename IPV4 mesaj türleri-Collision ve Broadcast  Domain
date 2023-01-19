@@ -1,0 +1,44 @@
+UNİCAST : : Tekil Yayın
+    Birebir bir mesajlaşma türüdür. Ağdaki diğer bilgisayarları ilgilendirmez. Bunun için teke-tek diyebiliriz.
+
+MULTİCAST : : Çoklu Yayın
+    Bir network kaynağından bir gruba iletiliyorsa buna multicast denir.
+    multicast mac adresi ilk 24 biti şekilde olup kalan 24 bitin pek bir önemi yoktur.
+        01-00-5E-XX-XX-XX
+    MULTİCAST İP adresi aralığı aşağıdaki gibidir.
+        224.0.0.0 -- 239.255.255.255
+
+BROADCAST : : Genel Yayın
+    Bütün bilgisayarlar arasında olan iletişimdir. Şöyle düşünelim, hoca ve sınıfta ders dinleyen öğrenciler
+    BROADCAST IP adresi şu şekildedir
+        192.168.1.255, bu IP adresi bulunan mantıksal adrese göre değişiklik gösterebilir. Yani burada
+        yazdığımız İP adresi burada bulunan mantıksal adresinin BROADCAST adresidir.
+    BROADCAST mac adresi şu şekildedir
+        FF-FF-FF-FF-FF-FF
+-------------------------------------------------------------------------------------------------------
+NOT:Full Dublex -aynı Mesajı hem gönderip hem alıyorsa,
+    Half Dublex - aynı anda Mesajı hem gönderip hemde alamıyorsa, yani ya mesaj gelir ya mesaj gider. ikisi
+    aynı anda olamaz.
+
+    RS-232 seri iletişim bağlantı noktasıdır.
+    PC-PC arasında çapraz kablo ile bir bağlantı varsa 3. bir PC yi çapraz kablo ile bağlayamayız. Bunun 
+    için HUB kullanmamız gerekmektedir.
+        HUB: Mesajları okuyamaz. Mesajları kotrol edemez, bozuk olup olmadığını test edemez.
+            Aktif olarak olan bütün cihazlara gelen mesajları iletir.
+            Half Dublex bir cihazdır.
+        HUB Half dublex olduğu için bir yerden mesaj geldiği zaman ve başka yerden gelen bir mesajla çakıştığı
+        zaman bu durum COLLİSİON olmaktadır. COLLİSİON DOMAİN ise bu HUB a bağlı olan bütün cihazları 
+        göstermektedir.
+        Huba bağlı olan bütün cihazlara Collision olması durumunda bütün PClere iletilir.
+
+        SWİTCH: Switch gelen pakete bakar, eğer paketin adresi switch üzerinden geçiyorsa paketi geçirir.
+        Ama paket adresi swich üzerinden geçmiyorsa drop eder, paket düşer.
+        Switch gelen paketleri okuyabilir. İnterfacelerin nerede olduğunu bilmektedir.
+        Switch gelen mesajın veya paketin bozuk olduğunu anlarsa o paketi drop eder ve düşürür.
+        NOT: Switchin her bir İnterfacesi bir Collision domaindir. COLLİSİON ları yönetmek için kullanılır.
+
+
+        ROUTER: BROADCAST leri yönetmek için kullanılır. Routerın İnterfacesi kadar Broadcast vardır.
+
+        
+    
