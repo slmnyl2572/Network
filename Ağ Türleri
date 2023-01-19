@@ -2,7 +2,7 @@ LAN :: Local Area Network -- Yerel Alan Ağı
     Kendi iç networkümüzdür. Tamamını biz yönetiriz.
 
 WAN :: Wide Area Network -- Geniş Alan Ağı
-    Farklı local networleri birbirine bağlayan networktur. Servis sağlayıcısı hizmeti alıp birbirine 
+    Farklı local networleri birbirine bağlayan networktur. Servis sağlayıcısı(ISP) hizmeti alıp birbirine 
     bağladığımız LAN'ları bağladığımız networklere WAN denir.
 
 WLAN :: Wireless LAN
