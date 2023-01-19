@@ -27,17 +27,19 @@ MAC :: Media Access Control
 
 DHCP :: Dinamic Host Configuration Protocol
     DHCP ilk olarak İstemci tarafından serverdan İP yapılandırma bilgisi talep eder. 
-    Bir networkte aynı İP adresine ait bilgisayar olamaz. DHCP, IP adreslerinin benzersiz olmasını sağlamaktadır. 
+    Bir networkte aynı İP adresine ait bilgisayar olamaz. DHCP, IP adreslerinin benzersiz olmasını 
+    sağlamaktadır. 
 
 DNS :: Domain Name System
-    Host isimlerini IPye çevirmek için kullanılan sistemdir. Sunucu isimleri benzersiz olmalıdır. GoDady veya isimtescil gibi sitelerde sunucumuzu kaydedebiliriz.
-    Web sitemize www.a.com isteği yaptığımızda öncelilkle çözümlenmesi için DNS Servera gider orada çözümlenir, IP adresini alır öyle adrese gider.
-    DNS server içinde alan adları vardır ve onlara karşılık gelen IP adresleri vardır.
+    Host isimlerini IPye çevirmek için kullanılan sistemdir. Sunucu isimleri benzersiz olmalıdır.
+    GoDady veya isimtescil gibi sitelerde sunucumuzu kaydedebiliriz.Web sitemize www.a.com isteği 
+    yaptığımızda öncelilkle çözümlenmesi için DNS Servera gider orada çözümlenir, IP adresini alır öyle 
+    adrese gider. DNS server içinde alan adları vardır ve onlara karşılık gelen IP adresleri vardır.
         www.aa.com 12.34.134.4
         www.aap.com 12.34.123.3
    "Nslookup" komutu ping göndereceğimiz alan adının, bize IP adresini getirir
         nslookup www.google.com, gibi deneme yapıp bize bu alan adının IP adresini getirir.
-    DNS Türkiye Sunucuları şu internet adresinden öğrenebiliriz. Burada aktif DNS adrsleri mevcuttur.
+    DNS Türkiye Sunucuları şu internet adresinden öğrenebiliriz. Burada linkte aktif DNS adresleri mevcuttur.
         https://public-dns.info/nameserver/tr.html
 
 HTTP/s :: Hyper Text Transfer Protocol /Security
@@ -77,7 +79,7 @@ NAT :: Network Adress Translation >> Ağ aracı çeviricisi
     Public IP adresi modem ayarları arayüzünden değiştirilebilir.
 
 İCMP :: Internet Control Message Protocol 
-    Ping komutu bu protokulu kullanır.
+    Ping komutu bu protokolu kullanır.
 
         >>  echo Request(ping isteği)>>
     source                              destination
