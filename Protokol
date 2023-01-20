@@ -102,3 +102,21 @@ APİPA :: Automatic Pirivate IP Addressing
     ve iletişim olmayacaktır. Sadece 2 adet PC Çapraz kablo ile bağlı olduğu zaman stati k IP adresi ile iletişim
     kurabiliyorduk. DHCP yaptığımız zaman APİPA kullanrak tekrar iletişim sağlar 2 PC arasında 169.254.x.x
     şeklinde IP adresleri tanımlar.
+
+ARP : : Address Resulation Protocol - Adres Çözümleme Protokolü
+    Switch MAC adresi tutar.
+    PC ARP tablosu tutar.
+
+    PC ilk başta ARP tablosu boş olduğu için destinationa ping atarız. Bu ilk ping atma işlemi ARP taraması
+    yapar. destinationa ikinci kez ping atmak istediğimiz zaman ARP taraması yapmadan ARP tablosundan
+    destinationa ait MAC adrsesini alır ve UNİCAST işlem yapar.
+    ARP anları : : 
+        İP atması yaptığımız an(Unique)
+        MAC adresi öğrendiği anda
+        Herhangi bir PC için İP tanımlama işlemi DHCP üzerinden yaptğımız zaman APİPA IP adresi alır.
+            Bu bağlamda mevcut DHCP tarafından verilen APİPA IP adresinin sistemde var olup olmadığını test
+            etmek için ARP kullanılır.
+DEFAULT GATEWAY : : 
+    IP yapılandırmasında bulunmaktadır. GATEWAY bulunduğum networkteki LAYER 3 katmanının adresidir.
+    SWİTCH bizim için bir LAYER 2 katmanıdır. ROUTER bizim için bir LAYER 3 katmanınıdr. Burada bulunan IP
+    Adresi bizim için default GATEWAY adresidir.
