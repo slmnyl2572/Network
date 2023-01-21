@@ -37,4 +37,29 @@ Nerede olursak olalım, "privilige" moda dönmek için "ctrl+c" komutunu kullan�
 
 Global konfigrasyon moduna gitmek için "configure terminal" komutu ile gideriz. "switch(config)#"
 
-İnterface modu ise şu şekildedir, "switch(config-if)#"
+İnterface modu ise şu şekildedir, "switch(config-if)#", "int fa0/1" şeklinde yazarak kısa şeklini yazmış oluyoruz
+
+Privilege modda yanlış bir komut veya kelime yazdığımızda hemen o kelimeyi DNS servere soruyor, bunu iptal
+etmek için su komutu kullanmalıyız. "no ip domain-lookup" 
+
+Switch ismi değiştirmek için "hostname NAME" şeklinde bir komut kullanırız. Eski default 
+ismine geri dönmek istersek "no hostname" komutunu kullanırız.
+
+Switch üzerinde var olan mac adreslerini bulmak için privilige modda "show mac-ad" şeklinde bulabiliriz. 
+Eğer bu tablo boş ise "p" kullanarak realtimede bir paket gönderimi yapıp switche bağlı mevcut cihazları
+tespit edebiliriz. MAC tablosu içini temizlemek için "clear mac-ad" komutunu kullanabiliriz.
+
+Cihazın içinde hangi version(işletim sistemi İOS) var onu görmek için "show version" komutunu kullanırız.
+
+Mevcut interfacelerin hangisi aktif hangisi kapalı olduğunu tespit etmek için "show ip interface brief"
+komutunu kullanıyoruz.
+
+Flash belleği görüntülemek için, "show flash:" komutunu kullanırız. Burada işletim sistemi dosyasını tutar
+.bin uzantılı dosya işletim sistemi dosyasıdır.
+
+Konsolun timeout olması 10 dakika defeult ayarıdır. Bunu istersek ayarlama şansımız mevcuttur.
+  >"en"
+  #"conf t"
+  #"line console 0"
+  "exec-timeout 0 15" , baştaki 0 dakikayı 15 ise saniyeyi göstermektedir.
+  "exec-timeout 0" yazdığımız zaman timeout modundan çıkma demektir.
