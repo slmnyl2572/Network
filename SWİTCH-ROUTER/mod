@@ -1,0 +1,9 @@
+S1> USER MODE
+S1# GLOBAL MODE
+    en,ena,enable
+S1(config)# PRİVİLEGE MODE
+    config terminal
+S1(config-if)# İNTERFACE MODE
+    int fa0/1
+S1(config-line)# LİNE MODE
+    #line console 0

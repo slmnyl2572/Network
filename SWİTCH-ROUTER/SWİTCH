@@ -1,0 +1,40 @@
+Switch içindeki işletim sistemi İOS denmektedir.
+LAYER 2 katmanında bulunmaktadır. Switch mesaj içeriğini okuyamaz sadece MAC adresini okuyabilir.
+NOT: MAC adresi local ağda haberleşmek için kullnlmaktadır. IP adresi ise public ağda iletişim kurmak için 
+
+Putty üzerinden switche bağlantı yapıyoruz. PUTTY de serial seçeneği üzerinden bağlantı sağlıyoruz.
+
+Switch de yapılandırma yapılırken işletim sistemi doğru bir şekilde yüklendiği zaman terminalde "Switch>" 
+gibi bir ifade gözükür. Ama "Switch:" ifadesi çıkarsa hata olduğuunu göstermektedir. 
+
+"?" komutunu "help" komutu olarak da bilinir. Hangi komutları ve ne için kullanmamız gerektiğini söyler.
+
+Burada çıkan parametlerin içinde hangi parametereler var, bunu bulmak için "show ?" şeklinde bir ifade
+kullanırız.
+
+Diyelim bir komut satırında bir komut yazmak istemekteyiz ama ilk 2 veya 3 harfini hatırladık ama gerisini
+hatırlamadık. Bunun için söyle bir komut kullanıp o ilk harflerle başlayan kelimeleri bize ekrana getirmektedir.
+
+"sh?" şeklinde "sh" ile başlayan komutları bize getirmektedir.
+
+Komutun ilk bir kaç harfini yazıp TAB tuşu ile tamamlama şansımızda bulunmaktadır.
+
+<cr> parametresi gördüğümüz zaman komut tamamlanmış demektir. Peki bunu nasıl görürüz, komutu yazarız,
+sonra "?" soru işareti ekleriz ardından bize bu cevap verilirse gereğini yaparız.
+
+ctrl+a imleci başa getirir.
+
+ctrl+e imleci sona götürür.
+
+Bir işlem yaptığımız zaman işlem çok uzun sürdüyse veya iptal etmek istersek "ctrl+shift+6" komutunu kullanırız
+
+"switch>"  user mode, user moddan privilege(ayrıcalıklı) moda geçmek için "enable" komutu kullanırız.
+"switch#" privilege mod
+
+Tekrar user moda donmek için "disable" komutunu kullanırız. 
+
+Nerede olursak olalım, "privilige" moda dönmek için "ctrl+c" komutunu kullanırız.
+
+Global konfigrasyon moduna gitmek için "configure terminal" komutu ile gideriz. "switch(config)#"
+
+İnterface modu ise şu şekildedir, "switch(config-if)#"
