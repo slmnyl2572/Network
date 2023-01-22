@@ -1,0 +1,4 @@
+1- flash hafıza
+    İOS işletim sistemi burada saklanmaktadır.
+2- RAM hafızaa
+    Çalışan uygulamalar burada bulunmaktadır. "sh run" diyerek Global modda çalıştırabiliriz.
