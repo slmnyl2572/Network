@@ -1,6 +1,7 @@
-Switch içindeki işletim sistemi İOS denmektedir.
+Switch içindeki işletim sistemine İOS denmektedir.
+
 LAYER 2 katmanında bulunmaktadır. Switch mesaj içeriğini okuyamaz sadece MAC adresini okuyabilir.
-NOT: MAC adresi local ağda haberleşmek için kullnlmaktadır. IP adresi ise public ağda iletişim kurmak için 
+NOT: MAC adresi local ağda haberleşmek için kullanılmaktadır. IP adresi ise public ağda iletişim kurmak için 
 
 Putty üzerinden switche bağlantı yapıyoruz. PUTTY de serial seçeneği üzerinden bağlantı sağlıyoruz.
 
@@ -63,3 +64,11 @@ Konsolun timeout olması 10 dakika defeult ayarıdır. Bunu istersek ayarlama ş
   #"line console 0"
   "exec-timeout 0 15" , baştaki 0 dakikayı 15 ise saniyeyi göstermektedir.
   "exec-timeout 0" yazdığımız zaman timeout modundan çıkma demektir.
+
+Çalışan konfigrasnyonları görüntülemek için privilege modda "sh run" komutunu kullanırız. 
+
+"reload" komutu ile yeniden başlatılıyor.
+
+"do show running" nerede olursak olalım, show komutunu şekildeki gibi çalıştırabiliriz. 
+
+"erase iso.bin" flash içindeki İOS u silmek için kullanılır.

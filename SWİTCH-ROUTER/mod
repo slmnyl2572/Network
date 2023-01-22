@@ -1,7 +1,7 @@
 S1> USER MODE
-S1# GLOBAL MODE
+S1# PRİVİLEGE MODE
     en,ena,enable
-S1(config)# PRİVİLEGE MODE
+S1(config)# GLOBAL MODE
     config terminal
 S1(config-if)# İNTERFACE MODE
     int fa0/1
