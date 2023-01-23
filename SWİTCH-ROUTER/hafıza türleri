@@ -1,4 +1,21 @@
-1- flash hafıza
-    İOS işletim sistemi burada saklanmaktadır.
-2- RAM hafızaa
-    Çalışan uygulamalar burada bulunmaktadır. "sh run" diyerek Global modda çalıştırabiliriz.
+1- flash hafıza NO VOLİTİLE
+    İOS işletim sistemi burada saklanmaktadır. Çalışırken RAMe yüklenmektedir.
+    kalıcı hafıza türüne girmektedir.
+    "İOS"
+2- RAM hafıza - geçici hafıza - VOLİTİLE
+    Çalışan uygulamalar burada bulunmaktadır. "sh run" diyerek Privilege modda çalıştırabiliriz. RAM
+    özelliğinden dolayı RAMde bilgiler kalıcı olmamaktadır. Geçici hafıza mevcuttur.
+    "İOS" "RUNNİNG-CONFİG"
+3- NV-RAM - kalıcı hafıza -NO VOLOTİLE
+    Kayıtlı konfigrasyon bulunmaktadır. 
+    "STARTUP CONFİG"
+    Buradaki varsa kayıtlı konfigrasyonu göremek için şu komutu kullanırız.
+    "sh startup-config"
+    Buraya kaydetmek için şu komutu kullanırız. 
+            "copy running-config startup-config"
+            "write memory" "write" "wri"
+    Şeklinde kopyalama yapabiliriz.
+4-ROM -NO VOLOTİLE
+    Bir takım recovery veya kurtarma için bize yardımcı olunan İOS tur.Örnek olarak şifre sıfırlama
+    "SINIRLI İOS"
+    
