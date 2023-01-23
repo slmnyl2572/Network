@@ -1,1 +1,0 @@
-Cisco network ile ilgili, aldığım notları buraya yazmaktayım. Bilgi paylaştıkça çoğalır kanaatinde olduğum için Githuba aldığım notları aktarmaktayım.
