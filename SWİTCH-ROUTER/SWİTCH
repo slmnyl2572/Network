@@ -32,7 +32,7 @@ Bir işlem yaptığımız zaman işlem çok uzun sürdüyse veya iptal etmek ist
 "switch>"  user mode, user moddan privilege(ayrıcalıklı) moda geçmek için "enable" komutu kullanırız.
 "switch#" privilege mod
 
-Tekrar user moda donmek için "disable" komutunu kullanırız. 
+Tekrar user moda dönmek için "disable" komutunu kullanırız. 
 
 Nerede olursak olalım, "privilige" moda dönmek için "ctrl+c" komutunu kullanırız.
 
@@ -65,10 +65,64 @@ Konsolun timeout olması 10 dakika defeult ayarıdır. Bunu istersek ayarlama ş
   "exec-timeout 0 15" , baştaki 0 dakikayı 15 ise saniyeyi göstermektedir.
   "exec-timeout 0" yazdığımız zaman timeout modundan çıkma demektir.
 
-Çalışan konfigrasnyonları görüntülemek için privilege modda "sh run" komutunu kullanırız. 
+Çalışan konfigrasyonları görüntülemek için privilege modda "sh run" komutunu kullanırız. 
 
 "reload" komutu ile yeniden başlatılıyor.
 
-"do show running" nerede olursak olalım, show komutunu şekildeki gibi çalıştırabiliriz. 
+"do show running" komutu nerede olursak olalım, show komutunu şekildeki gibi çalıştırabiliriz. 
 
-"erase iso.bin" flash içindeki İOS u silmek için kullanılır.
+"erase iso.bin" flash içindekiişletim sistemi olan İOS u silmek için kullanılır.
+
+flash daki İOS işletim sistemini sildikten sonra reboot ettiğimizz zaman flashda ve tftp de herhangi bir
+İOS işletim sistemi olmayacağı için ROM daki sınırlı İOS çalışır. Bu moda ise "Rommon" modu denmektedir.
+
+switch CLI ye parola koyma işlemi şu şekildedir. line moduna gidip "password 123" komutunu çalıştırıyoruz. 
+Switch default ayarı parola sorma olduğu için bunu değiştiriyoruz. "login" komutunu kullanıp default ayarını
+değiştiriyoruz.
+
+USER moddan PRİVİLEGE moda girerken parola koymak istersek GLOBAL modda "enable password 123" şeklinde kullanbiliriz.
+"no enable password" komutunu kullandığımız zaman parola sorma işlemi iptal olur.
+NOT: Parolada boşluk olabilir. "q w e r t" gibi.
+
+Script şekilde parolamızı saklamak istersek "enable secret 123" şeklinde komut kullnanırız.
+
+"sh run | begin line" filtreleme işlemi yapmaktadır. Burada line listele demektir. "begin" grep fonksiyonu
+görevi göremektedir.
+
+3 çeşit şifreleme yöntemi vardır:
+  1- type 0 >> şifreleme yoktur.
+  2- type 5 >> md5 şifreleme yöntemi ile şifrelenmektedir.
+  3- type 7 >> cisco şifreleme yöntemidir.
+
+Type 7 (cisco) yöntemi şifreleme için şu komutu kullanırız. "service password-encryption" komutunu kullanırız.
+Type 7 şifrelemeyi iptal etmek için "no service password-encryption" komutunu kullanırız.
+
+TELNET için şifreleme yaparsak GLOBAL modda şu komutu yazarız. "line vty 0 15", bütün girişleri al demek.
+LİNE moda geçtiğimiz zaman "password 123" ve "login" komutlarını aktif ederek TELNET için şifreleme yaparız.
+
+Cihazdaki saati görüntülemek için PRİVİLEGE modda "show clock" komutunu kullanırız.
+
+"clock set 12:22:22 12 April 2012" şeklinde tarihi ayarlayabiliriz.
+
+"banner motd #lütfen yetkili kişiler#" Switchi girişte açtığımızda görünmesini istediğimiz mesajdır.
+
+"description misafir network" komutu yazdığımız zaman mevcut içinde bulunduğumuz networke banner yazar.
+
+konfigrasyon modunda çoklu interface seçmek için şu komutu kullanırız. "int range fa0/3-4" 3 ve 4. interface
+seçmiş oluyoruz. Burada "description" komutu ile yazdıpımız bütün bannerler seçili bannerler için geçerlidir.
+
+"shutdown" komutu mevcut içinde bulunduğumuz interfaceleri kapatmaya yardımcı olmaktadır.
+
+Switch e IP adresi tanımlamak için en aşağıda bulunan Vlan 1 IP ataması yapabiliriz. Diğer adresler fa olanlara
+IP ataması olmaz. IP adresi tanımlaması şu şekilde yapılmaktadır. Vlan 1 alanına girdikten sonra şu komutu
+yazarız. "ip address 192.168.1.1 255.255.255.0" gibi kullanabiliriz.
+İP yapılandırması yaptıktan sonra VLAN 1 down olduğu için bunu UP yapmamız lazım. LİNE modunda "no sh"
+komutunu kullanıp UP yani çalıştırılabilir duruma getiriyoruz.
+2960-lanbasek9-mz.150-2.SE4.bin
+CIDR PREFİX
+/24 255.255.255.0
+/16 255.255.0.0
+/8  255.0.0.0
+
+TFTP server a İOS dosyasını kopyalamak için şu komutu kullanırız. "copy run tftp:"
+
