@@ -1,0 +1,38 @@
+APPLİCATİON LAYER - UYGULAMA KATMANI "DATA"
+    "HTTP"
+    OSİ katmanındaki 
+        APPLİCATİON
+        PRESENTATİON    
+        SESSİON , katmanlarına denk gelmektedir.
+    ssh telnet ftp tftp http smtp tarayıcılar dns, kullanıcıya en yakın olanlar APPLİCATİON katmanındadır.
+TRANSPORT LAYER - TAŞIMA KATMANI "PORT" "SEGMENT"
+    "TCP"
+İNTERNET LAYER - İNTERNET KATMANI "İP" "PAKET"
+    "İP"
+NETWORK ACCESS LAYER - AĞ ERİŞİM KATMANI "FRAME"
+    "ETHERNET"
+    SWİTCH, HATA KONTROLU   
+
+DHCP
+UDP - SES VE VİDEO TRAFİĞİ
+IP
+ETHERNET
+
+TFTP 
+UDP 
+IP
+ETHERNET
+
+TELNET - trvial - önemsiz
+TCP - SES VE VİDEO TRAFİĞİ
+IP
+ETHERNET
+
+SSH 
+TCP
+IP
+ETHERNET
+
+İCMP
+IP                  3 KATMAN
+ETHERNET

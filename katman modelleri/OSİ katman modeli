@@ -14,7 +14,7 @@ Uctan uca seyehati 7 katmana böler
         İP ARP İCMP ROUTER  
         Mesajın network adrslemesinin yapıldığı katmandır. PAKET. Hedefe giden yolun bulunması.
     DATALİNK LAYER - VERİ BAĞI KATMANI "MAC"
-    MAC, SWİTCH, 802.3, 802.11, NİC AĞKARTI, ERROR DETECTİON,
+        MAC, SWİTCH, 802.3, 802.11, NİC AĞKARTI, ERROR DETECTİON,
     PHYSİCAL LAYER - FİZKSEL KATMANI
         ENKAPSULASYON - SOURCE - KAYNAK
             Verilerin APPLİCATİON katmanından FİZKSEL katmana kadar iç içe sıkıştırılıp 0 ve 1 lere dönüşmesi
