@@ -1,0 +1,25 @@
+BAKIR KABLO TÜRÜ
+UTP - Korumasız çift bükümlü kablo
+    içinde 8 adet kablo adedi geçmektedir. 8 farklı renk
+    turuncu, turuncu beyaz, yeşil, yeşil beyaz, kahve, kahve beyaz, mavi, mavi beyaz
+STP - Korumalı çift bükümlü kablo
+    Koruyucu olmasının sebebi gürültüden daha az etkilenmektir.. Gürültü manyetik alandan sakınmaktır.
+    Mesafe az olduğu zaman genlik fazla olur, ondan dolayı gürültü azdır.
+    Kablo uzun olunca genliği azalacağı için kabloda gürültü artar. Teoride 100 metre kablo kullanılması 
+    gerektiğini söylemektedir.
+    RJ45 olması muhtemel standartlara göre 2 adettir.
+        1- T568-A
+            yeşil beyaz | yeşil | turuncu beyaz | mavi | mavi beyaz | turuncu | kahve beyaz | kahve
+        2- T568-B
+            turuncu beyaz |  turuncu | yeşil beyaz |  mavi | mavi beyaz | yeşil |kahve beyaz | kahve 
+    İki uçları T568-A veya  T568-B olursa buna düz kablo denir.
+    iki uçu farklı ise biri T568-A diğeri T568-B ise buna çapraz kablo denir.
+
+    FİBER OPTİK KABLO
+        SİNGLE FİBER OPTİK KABLO - TEK MODLU FİBER KABLO
+            DAHA uzak mesafelere veri taşınabilir.
+        MULTİ FİBER OPTİK KABLO - ÇOKLU FİBER OPTİK KABLO
+            DAHA kısa mesafelere veri taşınabilir.
+
+
+        
