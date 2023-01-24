@@ -1,0 +1,25 @@
+Uctan uca seyehati 7 katmana böler
+    APPLİCATİON LAYER - UYGULAMA KATMANI
+        DHCP TELNET SSH FTP HTTP TARAYICILAR SMTP DNS VB.
+        Kullanıcıya en yakın katmandır.
+    PRESENTATİON LAYER - SUNUM KATMANI
+        XML JPEG PNG VB.
+        Verilerin hangi formatta taşınacağını bu katmanda belirleriz.
+    SESSİON LAYER - OTURUM KATMANI
+        kullanıcı sunucu arasında ilk etkileşimin olduğu yerdir. 
+    TRANSPORT LAYER - TAŞIMA KATMANI "PORT"
+        FİREWALL TCP UDP
+        gelen datayı PDU denilen SEGMENT lere böler.
+    NETWORK LAYER - AĞ KATMANI "İP"
+        İP ARP İCMP ROUTER  
+        Mesajın network adrslemesinin yapıldığı katmandır. PAKET. Hedefe giden yolun bulunması.
+    DATALİNK LAYER - VERİ BAĞI KATMANI "MAC"
+    MAC, SWİTCH, 802.3, 802.11, NİC AĞKARTI, ERROR DETECTİON,
+    PHYSİCAL LAYER - FİZKSEL KATMANI
+        ENKAPSULASYON - SOURCE - KAYNAK
+            Verilerin APPLİCATİON katmanından FİZKSEL katmana kadar iç içe sıkıştırılıp 0 ve 1 lere dönüşmesi
+        DEKAPSULASYON - DESTİNATİON - HEDEF
+            Verilerin FİZKSEL katmandan APPLİCATİON katmanına kadar sıkışmayı çözmektir.
+
+NOT: ROUTER 1 2 3. KATAN BİLGİLERİNİ OKUR
+     SWİTCH 1 2. KATMAN BİLGİLERİNİ OKUR.
