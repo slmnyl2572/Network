@@ -1,0 +1,34 @@
+Uç cihazların ve ağ cihazlarının birbiri ile bağlanma biçimini belirleyen, network bileşenlerinin nasıl
+olacağını söyleyen şeydir.
+
+1-MANTIKSAL TOPOLOJİ
+    İP ve MAC adresi şemalarını göstermektedir.
+2-FİZİKSEL TOPOLOJİ
+    Cihazların FİZİKSEL konumu ile ilgilenmektedir.
+    :::::::a::::: STAR TOPOLOJİ - YILDIZ TOPOLOJİ
+        En yaygın kullanılan fiziksel topolojidir.
+                    PC
+        SWİTCH      PC
+                    PC
+    ::::::b::::: Extended star topoloJİ - Genişletilmiş TOPOLOJİ
+                                PC
+                    SWİTCH      PC
+                                PC
+
+                                PC
+        SWİTCH      SWİTCH      PC
+                                PC   
+
+                                PC
+                    SWİTCH      PC
+                                PC
+    :::::C::::::::Bus topoloji
+        Düz bir kablo üzerine PC lerin bağlanmasıdır. Şu an kullanılan bir yöntem değildir.
+        Sonladırma vardır.
+    :::::d::::::Ring topoloji
+        Bir çember etrafında bağlanan PC lere denir. Sonladırma yoktur.
+    :::::e::::::::WAN topoloji
+        point to point topoloji
+        örgülü topoloji
+
+    
