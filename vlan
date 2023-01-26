@@ -1,0 +1,24 @@
+VLAN faydaları
+    logical network
+    broadcast domain
+    security
+    maliyet
+
+VLAN çeşitleri
+    (up/down)
+    UP      data VLAN
+    UP      voice VLAN
+    DOWN    Default VLAN
+    UP      management VLAN
+    UP      native VLAN
+    UP      reserved VLAN
+
+VLAN konfigrasyon modunda şu komutları kullanıp yeni VLAN ekleyebiliriz.
+    "vlan 2" 1 numaralı vlan ekle demektir. 2 ile 1001 arasında id kullanbiliriz.
+
+    VLAN 1 ismi değiştirilemez!!
+Bir İnterface i VLAN a üye yapmanın yolu şu şekildedir
+S1(config)#int fa0/1
+S1(config-if)#switch port mode access
+S1(config-if)#switch access vlan 5
+S1(config-if)#exi
