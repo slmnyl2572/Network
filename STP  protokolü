@@ -1,0 +1,17 @@
+NOT: ethernet üzerinden bir switch bağlıyken 2 sanayede bir STP kullanarak çağrı yapar.
+NOT: ethernet üzerinden bir switch bağlıyken 30 saniyede bir DTP kullanarak çağrı yapar.
+NOT : Telnet üzerinden switch e bağlanmak istediğimiz zaman 3 yollu el sıkışma yapar. SYN,SYN+ACK,ACK
+    UDP kullanmayan bütün protokoller 3 yollu el sıkışma yapar.
+NOT : Telnet datayı şifrelemez. Cleartext olarak gönderim yapar. Port numarası 23 tür.
+
+Half duplex çalışan bir interface i, Full duplex yapmak için şu yolu kullanırız.
+S1(config)#int fa 0/24
+S1(config-if)#duplex full
+
+//speed
+S1(config)#int fa 0/24
+S1(config-if)#speed 10 ; burada hızını 10 mbit ayarlar karşılıklı interface lerin hızlaeı aynı olmalıdır 
+    aksi takdirde çalışmaz.
+
+S1(config)#int fa 0/24
+S1(config-if)#no mdix auto //cihazlar arasındaki kablolara  bakmaksızın bağlantıyı kurar
