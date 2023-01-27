@@ -22,3 +22,15 @@ S1(config)#int fa0/1
 S1(config-if)#switch port mode access
 S1(config-if)#switch access vlan 5
 S1(config-if)#exi
+
+S1(config-if)#no vlan 5 //şeklinde silinir.
+
+Start-up a kaydetttikten sonra VLAN özellikleri buraya kaydolur.
+
+NOT: En son olarak VLAN ekledik, switch ler arasında olan fa0/1 ler (iki taraf için) yalnız bir tane 
+VLAN da olduğu için diğer VLAN larda bunu bağı kullanamadıpı için bağlantı sağlanılamıyor.
+
+Access-Mode: Direk uç cihazların bağlı olduğu İnterface dir. PC-Switch gibi. Tek VLAN taşımaktadır.
+Trunk-Mode : Aynı anda birden  fazla VLAN ı taşımak bunun görevidir. 
+
+İnterface durumunu öğrenmek için PRIVILIGE modda şu komutu kullanırız. "sh int fa0/10 sw"
