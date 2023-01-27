@@ -34,3 +34,16 @@ Access-Mode: Direk uç cihazların bağlı olduğu İnterface dir. PC-Switch gib
 Trunk-Mode : Aynı anda birden  fazla VLAN ı taşımak bunun görevidir. 
 
 İnterface durumunu öğrenmek için PRIVILIGE modda şu komutu kullanırız. "sh int fa0/10 sw"
+
+Bir cihazda Uç cihaz bağlı olduğu zaman yukarıdaki komutu çalıştırdığımız zaman şunu ifadeyi görmek 
+lazım : : "Operational mode : Static access"
+
+Trunk moda geçmek için mevcut interface içinde şu komutu kullanırız. "sw m trunk"
+
+SwitchPort ta 4 mod vardır:
+    Access
+    Trunk
+    Dynamic Auto
+    Dynamic Desirable
+
+"802.1q" trunk standartıdır. dot1q şeklinde de geçer.
