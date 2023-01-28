@@ -40,6 +40,8 @@ lazım : : "Operational mode : Static access"
 
 Trunk moda geçmek için mevcut interface içinde şu komutu kullanırız. "sw m trunk"
 
+Trunk modda ayarlamalarımızı kontrol etmek için şu komutu kullanırız. "sh int trunk"
+
 SwitchPort ta 4 mod vardır:
     Access
     Trunk
