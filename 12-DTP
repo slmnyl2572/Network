@@ -1,0 +1,7 @@
+Dynamic Trunking Protocol
+    Cisco'ya özel bir protokoldür. Cisco'nun geliştirdiği bir protokoldür. OSI'nin 2. katmanı olan Data link katmanında çalışır.
+
+    DTP modunu kapatmak istersek S1 Switchin Fa0/24 interface modunda şu komutu kullanırız. "switchport nonegotiate"
+
+    NOT: Güvenlik açısından swich üzerindeki kullanılmayan interfaceleri yapılandırmamız gerekmektedir. Örnek olarak 23 numaralı interface üzerinde DTP anonsunu iptal etmiştik. Eğer dışarıdan 23 numaralı interfaceden çıkarılıp 22 numaralı interface bağlandığı zaman DTP anonsu çalışmaya başlayacaktır. 22 numaralı interface’i yapılandırması auto olduğu için bu durum gerçekleşmektedir. Bu durum güvenlik açığı oluşturmaktadır. Bunun için kullanılmayan interfaceleri “static access” moduna almamız gerekmektedir.
+
