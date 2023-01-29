@@ -1,0 +1,10 @@
+Cisco Discovery Protocol
+Cisco marka ağ cihazlarının birbiri ile konfigrasyon yapmadan haberleşme şeklidir. Sadece ağ cihazları 
+arasında yapılacak olan anonlar güvenlidir. Uç cihazlara yapılacak olan anonslarsa bir hacker bu CDP anonsu
+içinde olan bilgilere erişim sağlayabilir. Ardından exploit, brute force ve CDP spoofing yapabilir. bunu
+önlemek için Uç cihazlara CDP anonsunu yapmasını durdurmaktır. Komutlar şu şekildedir. Hangi interface i 
+kapatmak istersek o interface içine giriyoruz. Şu komutu yazıyoruz .: "no cdp enable"
+
+eğer ayar doğrulanmış mı onu kontrol etmek istersek şu komutu kullanırız. "do sh run"
+
+CDP anonsunu komple devre dışı bırakmak istersek konfigrasyon modunda "no cdp run" komutunu kullanabiliriz.
