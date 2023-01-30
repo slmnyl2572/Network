@@ -8,3 +8,5 @@ kapatmak istersek o interface içine giriyoruz. Şu komutu yazıyoruz .: "no cdp
 eğer ayar doğrulanmış mı onu kontrol etmek istersek şu komutu kullanırız. "do sh run"
 
 CDP anonsunu komple devre dışı bırakmak istersek konfigrasyon modunda "no cdp run" komutunu kullanabiliriz.
+
+
