@@ -1,0 +1,9 @@
+Switch defaultta Spanning Tree olarak çalıştığı için "loop ve mac database Instability" oluşmaz.
+    yedekli yol 
+        Dezavantajları
+            loop - döngü
+            MAC database Instability(MAC tutarsızlığı ve istikrarsızlığı)
+    artıklı yol
+
+STP devredışı bırakıp bu Dezavantajları nasıl oluşturup ve nasıl bunu avantaja çevirecez ona bakalım.
+"S1(config)#no Spanning-tree vlan 1-1001" bu komutu kullanırız.
