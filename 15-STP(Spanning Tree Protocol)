@@ -6,4 +6,8 @@ Switch defaultta Spanning Tree olarak çalıştığı için "loop ve mac databas
     artıklı yol
 
 STP devredışı bırakıp bu Dezavantajları nasıl oluşturup ve nasıl bunu avantaja çevirecez ona bakalım.
-"S1(config)#no Spanning-tree vlan 1-1001" bu komutu kullanırız.
+"S1(config)#no Spanning-tree vlan 1-1001" bu komutu kullanırız. Bu komut ile bütün VLAN ları devredışı 
+bırakmış oluruz.
+
+Switch lerde STP devredışı bıraktığımız zaman eskiden tarama için turuncu gözükürdü. Ama şu an direk yeşile
+dönmektedir.
