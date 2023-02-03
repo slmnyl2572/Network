@@ -11,3 +11,26 @@ bırakmış oluruz.
 
 Switch lerde STP devredışı bıraktığımız zaman eskiden tarama için turuncu gözükürdü. Ama şu an direk yeşile
 dönmektedir. 
+
+STP port rolleri
+    1-root port
+
+    2-designated port
+    3-block port:
+        Topoloji kuruuğu zaman tabi STP çalışması lazım, turuncu renkte bir tane port vardır. O turuncu 
+        port block portudur.
+root bridge
+
+STP nasıl çalışır? STP loop önlemek için şu 3 adımı gerşekleştirir.
+    1-root bridge seç / 
+        MAC adresi küçük olan root bridgedir
+    2-root bridge olmayan switchlerde mutlak olarak root port seç
+        COST >> BID >> PORT ID bu ğerlere sırayla bakılır.
+        Genelde Fast ethernet ile bağlantı sağladığımız için yük olarak 19 yazarız.
+    3-herbir network bölümünde bir tane olmak üzere designated port seç
+    NOT: root bridge her bğlantı noktası bir designated porttur.
+Switch de şu komutu kullanarak yapılandırma bilgisine ulaşabiliriz. "sh spannig-tree" 
+    ROOT ID ve BRİDGE İD değerleri aynı olan yerde o switch root cihazdır. Ya da switchin mevcut bağlı
+    olduğu bağlantılar hepsi "Desg" ise buna da root diyebiliriz.
+
+BID değeri toplamda 8 Byte bir değerdir.
