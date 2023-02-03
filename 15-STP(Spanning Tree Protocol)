@@ -34,3 +34,6 @@ Switch de şu komutu kullanarak yapılandırma bilgisine ulaşabiliriz. "sh span
     olduğu bağlantılar hepsi "Desg" ise buna da root diyebiliriz.
 
 BID değeri toplamda 8 Byte bir değerdir.
+
+2 Lİ switch de DP, RP ve BLK bulunurken, root switch bulunduktan sonra root tarafında interface
+ID olarak en büyük olanın karşısı bloklanır.
