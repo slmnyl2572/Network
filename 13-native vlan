@@ -2,7 +2,7 @@ Dot1q mesajları etiketsiz bir şekilde taşınması için geliştirilmiştir.
 "double tagging" hacker saldırı yaparken native vlan üzerinden saldırı yapabilir. onun için Vlan 1 karşısında
 hiçbir interface olmaması lazım. bu bir tür güvenlik önlemi olarak nitelendirilir. 
 
-"sw tr b-native vlan 199" şeklinde native vlan adresi değiştirilir.
+"sw tr native vlan 199" şeklinde native vlan adresi değiştirilir.
 
 Mevcut interface içinde "sh int trunk" komutu ile hangi interface oldugunu gorebiliyoruz. Gereksiz vlan
 bağlantıları dışında diğer vlanları silmemiz veya devre dışı bırakmamız gerekmektedir.
