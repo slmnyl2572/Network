@@ -37,3 +37,20 @@ BID değeri toplamda 8 Byte bir değerdir.
 
 2 Lİ switch de DP, RP ve BLK bulunurken, root switch bulunduktan sonra root tarafında interface
 ID olarak en büyük olanın karşısı bloklanır.
+
+STP versiyonları
+    STP:: İEEE - 801.1q
+    PVST:: CİSCO
+    PVST+::CİSCO
+    RSTP:: İEEE - 801.1w
+    RAPİD-PVST:: İEEE
+
+Down süresi beklemek istemezsek eğer, yani turuncu ışığı direk yeşil yanmasını istersek şu komutu
+kullanmamız lazım "spanning-tree portfast default" bunu configrasyon modda çalıştırmalıyız.
+
+Switch leri iki şekilde root yapabiliriz: 
+    "spanning-tree vlan 1 root primary"
+    "spanning-tree vlan 1 priority 4096"
+
+Bir interface in başka cihaz tarafından root olması engellenmesi için şu komutu kullanmak gerekir.
+    "spanning-tree guard root "
